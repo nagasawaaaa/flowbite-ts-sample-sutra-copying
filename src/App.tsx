@@ -3,7 +3,7 @@ import './App.css';
 import { Alert } from 'flowbite-react';
 import { HiInformationCircle } from 'react-icons/hi';
 
-const App = (): React.ReactNode => (
+const App = (): JSX.Element => (
   <div className="App">
     <h1 className="text-4xl font-bold mb-6">Learn Flowbite React</h1>
     <div className="flex flex-col gap-4">
