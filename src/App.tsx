@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Alert } from "flowbite-react";
+import { HiInformationCircle } from "react-icons/hi";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <h1 className="text-4xl font-bold mb-6">Learn Flowbite React</h1>
+      <div className="flex flex-col gap-4">
+        <Alert color="info">
+          <>
+            Lorem ipsum dolor sit amet.
+          </>
+        </Alert>
+        <Alert
+          color="failure"
+          icon={HiInformationCircle}
         >
-          Learn React
-        </a>
-      </header>
+          <>
+            Lorem ipsum dolor sit amet, consectetur.
+          </>
+        </Alert>
+        <Alert
+          color="success"
+          onDismiss={() => alert("Alert dismissed!")}
+        >
+          <>
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </>
+                </Alert>
+      </div>
     </div>
   );
 }
